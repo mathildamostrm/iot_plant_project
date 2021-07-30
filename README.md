@@ -19,15 +19,13 @@ The first thing I did was to connect and install the LoPy4 and the extensionboar
 # Putting everything together
 
 # Platform
+The data is presented in Ubidots, I choosed this alternitiv since I like the features it provides and that it's free for educational use.
 
 # The code
 
 boot.py is used first to initialise the connection to the LoPy4 and the wifi.
 
 main.py is where I read the data from the sensors and send the data to Ubidots.
-
-
-
 
 # Transmitting the data / connectivity
 
