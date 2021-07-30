@@ -1,6 +1,8 @@
 # iot_plant_project
 Mathilda Moström mm224ph
 
+I love plants, and expecially my own. To keep my beloved friends happy and healthy I choose for my first iot project to build a system that keeps track how moist the solid is. 
+
 # Objective
 
 # Material
