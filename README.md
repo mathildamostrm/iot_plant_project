@@ -13,24 +13,24 @@ From my great interest in plants and data, it became an obvious *choice* to buil
 I bought all my material from Electrokit. 
 ### LoPy4 and sensors bundle (LNU-1DT305)
 This is a kit which is developed for this course and which contains most of what you need to get started with similar projects, then you can buy more sensors depending on what you want to do, the kit contains:
-– LoPy4 with headers
-– Expansion board
-– Antennae
-– Micro USB cable
-– Jumper wire
-– Breadboard
-– 10 x Resistor1 kohm
-– 10 x Resistor 10 kohm
-– 10 x Resistor 330 ohm
-– 10 x Resistor 560 ohm
-– 5 x LED red
-– 5 x LED orange
-– 5 x LED green
-– 2 x LDR
-– Tilt switch
-– Temperature sensor MCP9700
-– Hall-effect sensor TLV49645
-– Magnet
+– LoPy4 with headers\
+– Expansion board\
+– Antennae\
+– Micro USB cable\
+– Jumper wire\
+– Breadboard\
+– 10 x Resistor1 kohm\
+– 10 x Resistor 10 kohm\
+– 10 x Resistor 330 ohm\
+– 10 x Resistor 560 ohm\
+– 5 x LED red\
+– 5 x LED orange\
+– 5 x LED green\
+– 2 x LDR\
+– Tilt switch\
+– Temperature sensor MCP9700\
+– Hall-effect sensor TLV49645\
+– Magnet\
 
 For this project I have used the LoPy4, the expansion board, the antennae, the micro USB cable and the temperature sensor MCP9700. 
 
@@ -59,16 +59,16 @@ The data is presented in Ubidots, I chose this alternative since I like the feat
 # The code
 
 ### boot.py
-[](img/boot.png)
+![](img/boot.png)
 boot.py is used first to initialise the connection to the LoPy4 and the wifi.
 
 ### main.py
-[](img/main.png)
-[](img/main_whiel.png)
+![](img/main.png)
+![](img/main_whiel.png)
 main.py is where I read the data from the sensors and send the data to Ubidots.
 
 ### constants.py
-[](img/constants.png)
+![](img/constants.png)
 
 # Transmitting the data / connectivity
 
