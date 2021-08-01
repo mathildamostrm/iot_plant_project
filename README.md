@@ -51,16 +51,24 @@ I choose to use Visual Studio Code as editor for this project, download the exte
 # Putting everything together
 First of all, disconnect your device from your computer. The first to cables we want to connect is one read to VND and one blue to GND on the PyCom device and then connect these to the breadboard one red(+) and the other one to blue(-). Then its time to connect the temperature sensor, its three legs should all be connected to the breadboard (please se more in detail in the picture below). Then you also need a cable from the middle leg in the sensor from the breadboard connected to P16 in the PyCom device, also connect to power and GND on the breadboard. It can be a good start to now connect everything to your computer and set up a small example code to see soo everything runs as expected and that you get relevant temperature data, try to cover the sensor with your fingers and see soo it works as expected. When you are done it's time to connect the next sensor. Start with to connect the sensor to the breadboard, connect GND to the breadboard itself and power to P12 on the PyCom device. Then you connect on cable from the breadboard to P15 on the PyCom device (again see picture below).
 
-![](iot_project.png)
+![](img/iot_project.png)
 
 # Platform
 The data is presented in Ubidots, I chose this alternative since I like the features it provides and that it's free for educational use. Ubidots is cloud-based. Ubidots also provides events so you can get for example notifications through text or email, they even have a mobile app for android soo you can see your dashboards easily anytime. The free version has a limit on how much data you can send every day, in my case this is not a problem since I don't need to send data that frequently. 
 
 # The code
 
+### boot.py
+[](img/boot.png)
 boot.py is used first to initialise the connection to the LoPy4 and the wifi.
 
+### main.py
+[](img/main.png)
+[](img/main_whiel.png)
 main.py is where I read the data from the sensors and send the data to Ubidots.
+
+### constants.py
+[](img/constants.png)
 
 # Transmitting the data / connectivity
 
