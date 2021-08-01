@@ -59,19 +59,29 @@ The data is presented in Ubidots, I chose this alternative since I like the feat
 # The code
 
 ### boot.py
-![](img/boot.png)
+
+![](img/boot.png)\
+
 boot.py is used first to initialise the connection to the LoPy4 and the wifi.
 
 ### main.py
-![](img/main.png)
-![](img/main_whiel.png)
+![](img/main.png)\
+
 main.py is where I read the data from the sensors and send the data to Ubidots.
+
+![](img/main_while.png)\
+
 
 ### constants.py
 ![](img/constants.png)
 
+constants.py is where I keep all constants that is needed.
+
 # Transmitting the data / connectivity
+In this project, the data is sent through WiFi, which works well in my case since I only intend to run my device at home and don't need to think about power consumption and WiFi access. I also use the message protocol MQTT which is suitable for iot and sensors. The data is sent to the cloud every 15 min, and from that Ubidots handles the rest.
+
 
 # Presenting the data
+
 
 # Finalizing the design
