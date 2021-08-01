@@ -1,5 +1,5 @@
 # iot_plant_project
-By: Mathilda Moström mm224ph
+By: Mathilda Moström\ mm224ph
 
 # Project description
 I love plants, and especially my own. To keep my beloved friends happy and healthy, I choose for my first IoT project to build a system that keeps track of how moist the solid material is. I also want to keep track of the temperature to indicate how much sunlight they get . So the idea of this project is to be able to collect data from the two sensors (soil humidity and room temperature) and then make the data visible in Ubidots. Data can then be used to gain a better understanding of the specific needs of the different plants.
@@ -51,7 +51,7 @@ I choose to use Visual Studio Code as editor for this project, download the exte
 # Putting everything together
 First of all, disconnect your device from your computer. The first to cables we want to connect is one read to VND and one blue to GND on the PyCom device and then connect these to the breadboard one red(+) and the other one to blue(-). Then its time to connect the temperature sensor, its three legs should all be connected to the breadboard (please se more in detail in the picture below). Then you also need a cable from the middle leg in the sensor from the breadboard connected to P16 in the PyCom device, also connect to power and GND on the breadboard. It can be a good start to now connect everything to your computer and set up a small example code to see soo everything runs as expected and that you get relevant temperature data, try to cover the sensor with your fingers and see soo it works as expected. When you are done it's time to connect the next sensor. Start with to connect the sensor to the breadboard, connect GND to the breadboard itself and power to P12 on the PyCom device. Then you connect on cable from the breadboard to P15 on the PyCom device (again see picture below).
 
-![](img/iot_project.png)
+![](png/iot_project.png)
 
 # Platform
 The data is presented in Ubidots, I chose this alternative since I like the features it provides and that it's free for educational use. Ubidots is cloud-based. Ubidots also provides events so you can get for example notifications through text or email, they even have a mobile app for android soo you can see your dashboards easily anytime. The free version has a limit on how much data you can send every day, in my case this is not a problem since I don't need to send data that frequently. 
@@ -60,20 +60,20 @@ The data is presented in Ubidots, I chose this alternative since I like the feat
 
 ### boot.py
 
-![](img/boot.png)\
+![](png/boot.png)\
 
 boot.py is used first to initialise the connection to the LoPy4 and the wifi.
 
 ### main.py
-![](img/main.png)\
+![](png/main.png)\
 
 main.py is where I read the data from the sensors and send the data to Ubidots.
 
-![](img/main_while.png)\
+![](png/main_while.png)\
 
 
 ### constants.py
-![](img/constants.png)
+![](png/constants.png)
 
 constants.py is where I keep all constants that is needed.
 
@@ -82,6 +82,9 @@ In this project, the data is sent through WiFi, which works well in my case sinc
 
 
 # Presenting the data
-
+![](png/ubidots.png)
+The picture abow shows my dashboard on Ubidots with the temperature on the left and the moist sensor on the right. The data is saved every 15 min in the database.
 
 # Finalizing the design
+![](png/design.png)
+I think this project went well, I am amazed at how easy it is to actually measure and build things, almost a bit like when you played with Lego when you were little. I am aware that this is a basic hello world program and that there is a great opportunity to develop this project more. The idea is to add so I measure more plants and buy more robust sensors that are more practical to stick in the pots. But overall I am happy that the project went to the port and after this course, I am very inspired to give myself to other more advanced projects.
