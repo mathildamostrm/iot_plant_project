@@ -44,9 +44,12 @@ This is a sensor for measuring the moisture level in soil. The sensor works by p
 | Soil moisture sensor | 1 | 29.00 kr | https://www.electrokit.com/produkt/jordfuktighetssensor/ |
 
 # Computer setup
-The first thing I did was to connect and install the LoPy4 and the extensionboard, connected with a mirco-USB cable. I choose to use Visual Studio Code as editor for this project, download the extension Pymakr. Then close VSC and download the Pycom Device Firmware Updater and follow the installation setup found on: ``` https://docs.pycom.io/pybytes/gettingstarted/ ```
+The first thing you do is to update the firmware of your expansion board. I did this on my Mac but it should work fine on any machine (Ubuntu, Windows). Nex step is to download the Pycom Device Firmware Updater and follow the installation setup found on: ``` https://docs.pycom.io/pybytes/gettingstarted/ ```. Now we are all set to connect the LoPy4 and the extensionboard with the mirco-USB cable to your computer.  
+
+I choose to use Visual Studio Code as editor for this project, download the extension Pymakr. If everything worked smoothly you are now ready to type some code and upload it. 
 
 # Putting everything together
+First of all, disconnect your device from your computer. The first to cables we want to connect is one read to VND and one blue to GND on the PyCom device and then connect these to the breadboard one red(+) and the other one to blue(-). Then its time to connect the temperature sensor, its three legs should all be connected to the breadboard (please se more in detail in the picture below). Then you also need a cable from the middle leg in the sensor from the breadboard connected to P16 in the PyCom device, also connect to power and GND on the breadboard. It can be a good start to now connect everything to your computer and set up a small example code to see soo everything runs as expected and that you get relevant temperature data, try to cover the sensor with your fingers and see soo it works as expected. When you are done it's time to connect the next sensor. Start with to connect the sensor to the breadboard, connect GND to the breadboard itself and power to P12 on the PyCom device. Then you connect on cable from the breadboard to P15 on the PyCom device (again see picture below).
 
 # Platform
 The data is presented in Ubidots, I choosed this alternitiv since I like the features it provides and that it's free for educational use.
