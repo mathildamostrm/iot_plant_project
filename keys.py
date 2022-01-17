@@ -1,2 +1,2 @@
 wifi_ssid = "Flamingos for sale 2.4"
-wifi_password = "Marc1Mari2"
+wifi_password = ""
